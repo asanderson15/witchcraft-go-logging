@@ -5,7 +5,7 @@ package v2
 
 import (
 	"github.com/palantir/pkg/rid"
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/common/v2"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/common/v2"
 )
 
 type AssetFileLoadIdentifier = v2.AssetFileLoadIdentifier

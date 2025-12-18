@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
 	"github.com/stretchr/testify/assert"
 )
 

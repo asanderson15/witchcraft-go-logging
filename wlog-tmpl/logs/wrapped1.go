@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
 )
 
 var wrapped1Unwrapper = logentryformatter.UnwrapperFunc(unwrapWrappedV1)

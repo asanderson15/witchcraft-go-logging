@@ -17,7 +17,7 @@ package auditloginternal
 import (
 	"io"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
 )
 
 type Audit3AuditProducerType string

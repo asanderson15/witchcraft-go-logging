@@ -8,7 +8,7 @@ import (
 
 	"github.com/palantir/pkg/safejson"
 	"github.com/palantir/pkg/safeyaml"
-	"github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category"
 )
 
 type AuditCategoryV2 struct {

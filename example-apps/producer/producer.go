@@ -18,7 +18,7 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 )
 
 func ProduceNumberContext(ctx context.Context) int {

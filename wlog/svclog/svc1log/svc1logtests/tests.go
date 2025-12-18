@@ -24,8 +24,8 @@ import (
 
 	"github.com/palantir/pkg/objmatcher"
 	"github.com/palantir/pkg/safejson"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -193,7 +193,7 @@ func TestCases() []TestCase {
 		{
 			Name:    "service log entry with origin set on base logger",
 			Message: "this is a test",
-			Origin:  "github.com/palantir/witchcraft-go-logging",
+			Origin:  "github.com/palantir/witchcraft-go-logging/v2",
 			LogParams: []svc1log.Param{
 				svc1log.SafeParams(map[string]interface{}{
 					"key": "value",
@@ -206,7 +206,7 @@ func TestCases() []TestCase {
 			JSONMatcher: objmatcher.MapMatcher(map[string]objmatcher.Matcher{
 				"level":   objmatcher.NewEqualsMatcher("INFO"),
 				"time":    objmatcher.NewRegExpMatcher(".+"),
-				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging"),
+				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging/v2"),
 				"type":    objmatcher.NewEqualsMatcher("service.1"),
 				"message": objmatcher.NewEqualsMatcher("this is a test"),
 				"params": objmatcher.MapMatcher(map[string]objmatcher.Matcher{
@@ -221,7 +221,7 @@ func TestCases() []TestCase {
 		{
 			Name:      "parameter that is set manually overrides base value",
 			Message:   "this is a test",
-			Origin:    "github.com/palantir/witchcraft-go-logging",
+			Origin:    "github.com/palantir/witchcraft-go-logging/v2",
 			LogParams: []svc1log.Param{svc1log.Origin("custom-origin")},
 			JSONMatcher: objmatcher.MapMatcher(map[string]objmatcher.Matcher{
 				"level":   objmatcher.NewEqualsMatcher("INFO"),
@@ -234,7 +234,7 @@ func TestCases() []TestCase {
 		{
 			Name:    "stacktrace includes error parameters",
 			Message: "something happened",
-			Origin:  "github.com/palantir/witchcraft-go-logging",
+			Origin:  "github.com/palantir/witchcraft-go-logging/v2",
 			LogParams: []svc1log.Param{
 				svc1log.Stacktrace(
 					testError{
@@ -253,7 +253,7 @@ something/something:123`,
 			JSONMatcher: objmatcher.MapMatcher(map[string]objmatcher.Matcher{
 				"level":   objmatcher.NewEqualsMatcher("INFO"),
 				"time":    objmatcher.NewRegExpMatcher(".+"),
-				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging"),
+				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging/v2"),
 				"type":    objmatcher.NewEqualsMatcher("service.1"),
 				"message": objmatcher.NewEqualsMatcher("something happened"),
 				"params": objmatcher.MapMatcher(map[string]objmatcher.Matcher{
@@ -268,7 +268,7 @@ something/something:123`,
 		{
 			Name:    "parameters included from ParamStorer parameter",
 			Message: "something happened",
-			Origin:  "github.com/palantir/witchcraft-go-logging",
+			Origin:  "github.com/palantir/witchcraft-go-logging/v2",
 			LogParams: []svc1log.Param{
 				svc1log.Params(testParamStorerObject{
 					safeParams: map[string]interface{}{
@@ -284,7 +284,7 @@ something/something:123`,
 				"time":    objmatcher.NewRegExpMatcher(".+"),
 				"type":    objmatcher.NewEqualsMatcher("service.1"),
 				"message": objmatcher.NewEqualsMatcher("something happened"),
-				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging"),
+				"origin":  objmatcher.NewEqualsMatcher("github.com/palantir/witchcraft-go-logging/v2"),
 				"params": objmatcher.MapMatcher(map[string]objmatcher.Matcher{
 					"safeObjectParamKey": objmatcher.NewEqualsMatcher("safeObjectParamValue"),
 				}),

@@ -4,8 +4,8 @@
 package v2
 
 import (
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category/v2"
-	"github.com/palantir/witchcraft-go-logging/conjure/foundry/audit/api/category"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category/v2"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/foundry/audit/api/category"
 )
 
 type AuditCategoryV2 = v2.AuditCategoryV2

@@ -17,7 +17,7 @@ package wlog
 import (
 	"context"
 
-	wloginternal "github.com/palantir/witchcraft-go-logging/wlog/internal"
+	wloginternal "github.com/palantir/witchcraft-go-logging/v2/wlog/internal"
 )
 
 func ContextWithUID(ctx context.Context, uid string) context.Context {

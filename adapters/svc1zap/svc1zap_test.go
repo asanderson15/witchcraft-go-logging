@@ -20,14 +20,14 @@ import (
 	"testing"
 
 	"github.com/palantir/pkg/objmatcher"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
 	// Use zap as logger implementation
-	_ "github.com/palantir/witchcraft-go-logging/wlog-zap"
+	_ "github.com/palantir/witchcraft-go-logging/v2/wlog-zap"
 )
 
 func TestSvc1ZapWrapper(t *testing.T) {

@@ -63,9 +63,9 @@ const pkgAndImports = `package audit3log
 import (
 	"context"
 
-	"github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category"
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category/v2"
-	categoriespkg "github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit3log/internal/categories"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category/v2"
+	categoriespkg "github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit3log/internal/categories"
 )
 `
 

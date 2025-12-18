@@ -17,7 +17,7 @@ package metric1log
 import (
 	"context"
 
-	wloginternal "github.com/palantir/witchcraft-go-logging/wlog/internal"
+	wloginternal "github.com/palantir/witchcraft-go-logging/v2/wlog/internal"
 )
 
 type metric1LogContextKeyType string

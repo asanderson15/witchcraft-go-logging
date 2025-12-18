@@ -17,9 +17,9 @@ package wrapped1log
 import (
 	"io"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/extractor"
-	"github.com/palantir/witchcraft-go-logging/wlog/reqlog/req2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/extractor"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/reqlog/req2log"
 )
 
 type wrappedReq2Logger struct {

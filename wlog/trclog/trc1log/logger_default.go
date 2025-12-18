@@ -17,7 +17,7 @@ package trc1log
 import (
 	"time"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
 	"github.com/palantir/witchcraft-go-tracing/wtracing"
 )
 

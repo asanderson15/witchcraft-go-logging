@@ -20,8 +20,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	wloginternal "github.com/palantir/witchcraft-go-logging/wlog/internal"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	wloginternal "github.com/palantir/witchcraft-go-logging/v2/wlog/internal"
 )
 
 func SetDefaultLoggerCreator(creator func() Logger) {

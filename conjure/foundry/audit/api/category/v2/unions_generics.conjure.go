@@ -6,7 +6,7 @@
 package v2
 
 import (
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category/v2"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category/v2"
 )
 
 type AuditCategoryV2WithT[T any] = v2.AuditCategoryV2WithT[T]

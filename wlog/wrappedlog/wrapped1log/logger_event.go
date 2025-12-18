@@ -15,8 +15,8 @@
 package wrapped1log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/evtlog/evt2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/evtlog/evt2log"
 )
 
 type wrappedEvt2Logger struct {

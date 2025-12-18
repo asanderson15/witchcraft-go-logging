@@ -24,11 +24,11 @@ import (
 
 	"github.com/palantir/pkg/safejson"
 	werror "github.com/palantir/witchcraft-go-error"
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	_ "github.com/palantir/witchcraft-go-logging/wlog-zap"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/wapp"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	_ "github.com/palantir/witchcraft-go-logging/v2/wlog-zap"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/wapp"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -144,11 +144,11 @@ func TestRunWithRecoveryLogging_NilPointer(t *testing.T) {
 goroutine \d+ \[running]:
 panic\(\.\.\.\)
 	runtime/panic\.go:\d+ \+0x[0-9a-f]+
-github\.com/palantir/witchcraft-go-logging/wlog/wapp_test\.TestRunWithRecoveryLogging_NilPointer\.func1\(\.\.\.\)
+github\.com/palantir/witchcraft-go-logging/v2/wlog/wapp_test\.TestRunWithRecoveryLogging_NilPointer\.func1\(\.\.\.\)
 	.+/wlog/wapp/fatal_test\.go:\d+ \+0x[0-9a-f]+
-github\.com/palantir/witchcraft-go-logging/wlog/wapp\.RunWithRecoveryLogging\(\.\.\.\)
+github\.com/palantir/witchcraft-go-logging/v2/wlog/wapp\.RunWithRecoveryLogging\(\.\.\.\)
 	.+/wlog/wapp/fatal\.go:\d+ \+0x[0-9a-f]+
-github\.com/palantir/witchcraft-go-logging/wlog/wapp_test\.TestRunWithRecoveryLogging_NilPointer\(\.\.\.\)
+github\.com/palantir/witchcraft-go-logging/v2/wlog/wapp_test\.TestRunWithRecoveryLogging_NilPointer\(\.\.\.\)
 	.+/wlog/wapp/fatal_test\.go:\d+ \+0x[0-9a-f]+
 testing\.tRunner\(\.\.\.\)
 	testing/testing\.go:\d+ \+0x[0-9a-f]+

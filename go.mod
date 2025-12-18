@@ -1,4 +1,4 @@
-module github.com/palantir/witchcraft-go-logging
+module github.com/palantir/witchcraft-go-logging/v2
 
 go 1.25.0
 

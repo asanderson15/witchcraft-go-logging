@@ -19,7 +19,7 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"github.com/palantir/witchcraft-go-logging/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
 )
 
 type gLogger struct {

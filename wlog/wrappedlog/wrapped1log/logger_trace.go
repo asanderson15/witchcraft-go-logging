@@ -15,8 +15,8 @@
 package wrapped1log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/trclog/trc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/trclog/trc1log"
 	"github.com/palantir/witchcraft-go-tracing/wtracing"
 )
 

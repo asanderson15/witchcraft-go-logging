@@ -21,10 +21,10 @@ import (
 	"strings"
 
 	werror "github.com/palantir/witchcraft-go-error"
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog/diaglog/diag1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/evtlog/evt2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/diaglog/diag1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/evtlog/evt2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 )
 
 // RunWithRecoveryLogging wraps a callback, logging any panics recovered as errors.

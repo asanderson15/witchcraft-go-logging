@@ -16,7 +16,7 @@ package logs
 
 import (
 	"github.com/palantir/pkg/safejson"
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
 )
 
 var Unwrappers = map[logentryformatter.LogType]logentryformatter.Unwrapper{

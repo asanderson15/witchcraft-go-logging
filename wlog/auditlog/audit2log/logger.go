@@ -17,8 +17,8 @@ package audit2log
 import (
 	"io"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/internal/auditloginternal"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/internal/auditloginternal"
 )
 
 type AuditResultType string

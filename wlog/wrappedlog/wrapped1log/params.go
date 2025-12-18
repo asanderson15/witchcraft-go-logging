@@ -15,17 +15,17 @@
 package wrapped1log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit3log"
-	"github.com/palantir/witchcraft-go-logging/wlog/diaglog/diag1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/evtlog/evt2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/extractor"
-	"github.com/palantir/witchcraft-go-logging/wlog/metriclog/metric1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/reqlog/req2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/trclog/trc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit3log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/diaglog/diag1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/evtlog/evt2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/extractor"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/metriclog/metric1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/reqlog/req2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/trclog/trc1log"
 	"github.com/palantir/witchcraft-go-tracing/wtracing"
 )
 

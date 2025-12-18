@@ -21,8 +21,8 @@ import (
 
 	"github.com/palantir/pkg/datetime"
 	"github.com/palantir/pkg/safejson"
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
 )
 
 var diagnostics1LogType = &diagnostics1LogTyper{

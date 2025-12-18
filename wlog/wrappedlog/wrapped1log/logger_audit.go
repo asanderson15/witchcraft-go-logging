@@ -15,8 +15,8 @@
 package wrapped1log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit2log"
 )
 
 type wrappedAudit2Logger struct {

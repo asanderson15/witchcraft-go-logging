@@ -23,8 +23,8 @@ import (
 	"github.com/palantir/pkg/rid"
 	"github.com/palantir/pkg/uuid"
 	werror "github.com/palantir/witchcraft-go-error"
-	"github.com/palantir/witchcraft-go-logging/internal/gopath"
-	"github.com/palantir/witchcraft-go-logging/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/internal/gopath"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
 	wparams "github.com/palantir/witchcraft-go-params"
 )
 
@@ -74,9 +74,9 @@ func Origin(origin string) Param {
 //
 // The parentCaller parameter specifies the number of "parents" to go back in the call stack, while the parentPkg
 // parameter determines the level of the parent package that should be used. For example, if this function is called in
-// a file with the package path "github.com/palantir/witchcraft-go-logging/wlog" and that function is called from a file
+// a file with the package path "github.com/palantir/witchcraft-go-logging/v2/wlog" and that function is called from a file
 // with the package path "github.com/palantir/project/helper", then with parentCaller=0 and parentPkg=0 the returned
-// value would be "github.com/palantir/witchcraft-go-logging/wlog", while with parentCaller=1 and parentPkg=1 the value
+// value would be "github.com/palantir/witchcraft-go-logging/v2/wlog", while with parentCaller=1 and parentPkg=1 the value
 // would be "github.com/palantir/project" (parentCaller=1 sets the package to "github.com/palantir/project/helper" and
 // parentPkg=1 causes the package to become "github.com/palantir/project").
 func CallerPkg(parentCaller, parentPkg int) string {
@@ -102,9 +102,9 @@ func OriginFromInitLine() Param {
 
 // OriginFromInitPkg sets the "origin" field to be the package path of the location at which this function is called.
 // The skipPkg parameter determines the level of the parent package that should be used. For example, if this function
-// is called in a file with the package path "github.com/palantir/witchcraft-go-logging/wlog", then with skipPkg=0 the
-// origin would be "github.com/palantir/witchcraft-go-logging/wlog", while with skipPkg=1 the origin would be
-// "github.com/palantir/witchcraft-go-logging".
+// is called in a file with the package path "github.com/palantir/witchcraft-go-logging/v2/wlog", then with skipPkg=0 the
+// origin would be "github.com/palantir/witchcraft-go-logging/v2/wlog", while with skipPkg=1 the origin would be
+// "github.com/palantir/witchcraft-go-logging/v2".
 func OriginFromInitPkg(skipPkg int) Param {
 	return Origin(CallerPkg(1, 0))
 }

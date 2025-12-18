@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logs"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logs"
 	"github.com/stretchr/testify/assert"
 )
 

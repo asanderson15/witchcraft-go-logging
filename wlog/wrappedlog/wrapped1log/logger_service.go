@@ -15,8 +15,8 @@
 package wrapped1log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 )
 
 type wrappedSvc1Logger struct {
