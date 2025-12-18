@@ -75,8 +75,8 @@ package main
 import (
 	"os"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 )
 
 func main() {
@@ -104,10 +104,10 @@ package main
 import (
 	"os"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 	// import wlog-zap to set zap as the default logger provider
-	_ "github.com/palantir/witchcraft-go-logging/wlog-zap"
+	_ "github.com/palantir/witchcraft-go-logging/v2/wlog-zap"
 )
 
 func main() {
@@ -132,9 +132,9 @@ package main
 import (
 	"os"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog-zap"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-zap"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 )
 
 func main() {

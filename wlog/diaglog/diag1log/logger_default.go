@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
 )
 
 type defaultLogger struct {

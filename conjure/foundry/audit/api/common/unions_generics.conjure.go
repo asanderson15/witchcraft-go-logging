@@ -6,7 +6,7 @@
 package common
 
 import (
-	"github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/common"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/common"
 )
 
 type ResourceWithT[T any] = common.ResourceWithT[T]

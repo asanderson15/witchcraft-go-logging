@@ -6,7 +6,7 @@
 package category
 
 import (
-	"github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category"
 )
 
 type AuditCategoryWithT[T any] = category.AuditCategoryWithT[T]

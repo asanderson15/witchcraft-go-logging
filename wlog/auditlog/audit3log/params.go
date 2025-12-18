@@ -15,7 +15,7 @@
 package audit3log
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/internal/auditloginternal"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/internal/auditloginternal"
 )
 
 const (

@@ -19,9 +19,9 @@ import (
 
 	"github.com/palantir/pkg/objmatcher"
 	"github.com/palantir/pkg/rid"
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category/v2"
-	commonv2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/common/v2"
-	"github.com/palantir/witchcraft-go-logging/wlog/logreader"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category/v2"
+	commonv2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/common/v2"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/logreader"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

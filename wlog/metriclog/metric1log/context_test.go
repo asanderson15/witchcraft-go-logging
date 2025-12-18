@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"github.com/palantir/pkg/objmatcher"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/logreader"
-	"github.com/palantir/witchcraft-go-logging/wlog/metriclog/metric1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/logreader"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/metriclog/metric1log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

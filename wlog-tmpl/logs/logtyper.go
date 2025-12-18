@@ -15,7 +15,7 @@
 package logs
 
 import (
-	"github.com/palantir/witchcraft-go-logging/wlog-tmpl/logentryformatter"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog-tmpl/logentryformatter"
 )
 
 type logTyper interface {

@@ -15,9 +15,9 @@
 package audit3log
 
 import (
-	v2 "github.com/palantir/witchcraft-go-logging/conjure/audit-api/foundry/audit/api/category/v2"
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	categoriespkg "github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit3log/internal/categories"
+	v2 "github.com/palantir/witchcraft-go-logging/v2/conjure/audit-api/foundry/audit/api/category/v2"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	categoriespkg "github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit3log/internal/categories"
 )
 
 // entityExtractor is a function that extracts entities from a value of type T.

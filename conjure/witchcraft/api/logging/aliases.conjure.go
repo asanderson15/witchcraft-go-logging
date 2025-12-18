@@ -3,7 +3,7 @@
 
 package logging
 
-import "github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
+import "github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
 
 type OrganizationId = logging.OrganizationId
 type SessionId = logging.SessionId

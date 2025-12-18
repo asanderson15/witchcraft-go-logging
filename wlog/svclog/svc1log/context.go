@@ -17,8 +17,8 @@ package svc1log
 import (
 	"context"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	wloginternal "github.com/palantir/witchcraft-go-logging/wlog/internal"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	wloginternal "github.com/palantir/witchcraft-go-logging/v2/wlog/internal"
 	wparams "github.com/palantir/witchcraft-go-params"
 	"github.com/palantir/witchcraft-go-tracing/wtracing"
 )

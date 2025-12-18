@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/palantir/pkg/objmatcher"
-	"github.com/palantir/witchcraft-go-logging/wlog/logreader"
-	"github.com/palantir/witchcraft-go-logging/wlog/trclog/trc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/logreader"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/trclog/trc1log"
 	"github.com/palantir/witchcraft-go-tracing/wtracing"
 	"github.com/palantir/witchcraft-go-tracing/wzipkin"
 	"github.com/stretchr/testify/assert"

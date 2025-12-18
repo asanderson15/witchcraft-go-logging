@@ -24,12 +24,12 @@ import (
 	"testing"
 
 	"github.com/nmiyake/pkg/dirs"
-	"github.com/palantir/witchcraft-go-logging/conjure/witchcraft-logging-api/witchcraft/api/logging"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/auditlog/audit2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/evtlog/evt2log"
-	"github.com/palantir/witchcraft-go-logging/wlog/metriclog/metric1log"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/conjure/witchcraft-logging-api/witchcraft/api/logging"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/auditlog/audit2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/evtlog/evt2log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/metriclog/metric1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -173,7 +173,7 @@ func testFromContextFromEmptyContextForSingleLogger(t *testing.T, tmpDir string,
 				logOutput := string(bytes)
 
 				firstPortionRegexp := regexp.MustCompile(
-					regexp.QuoteMeta(`[WARNING]`) + ".*" + regexp.QuoteMeta(`github.com/`) + "[^/]+" + regexp.QuoteMeta(`/witchcraft-go-logging/wlog_test.TestOutputFromContextEmptyContext`) + ".+" + regexp.QuoteMeta(`/wlog/context_default_test.go:`) + "[0-9]+" + regexp.QuoteMeta(`]: usage of `+loggerTestCaseInfo.loggerPkg+`.Logger from FromContext that did not have that logger set: `))
+					regexp.QuoteMeta(`[WARNING]`) + ".*" + regexp.QuoteMeta(`github.com/`) + "[^/]+" + regexp.QuoteMeta(`/witchcraft-go-logging/v2/wlog_test.TestOutputFromContextEmptyContext`) + ".+" + regexp.QuoteMeta(`/wlog/context_default_test.go:`) + "[0-9]+" + regexp.QuoteMeta(`]: usage of `+loggerTestCaseInfo.loggerPkg+`.Logger from FromContext that did not have that logger set: `))
 				loc := firstPortionRegexp.FindStringIndex(logOutput)
 				require.NotNil(t, loc, "Unexpected log output: %s", logOutput)
 
@@ -196,7 +196,7 @@ func testFromContextFromEmptyContextForSingleLogger(t *testing.T, tmpDir string,
 				logOutput := string(bytes)
 
 				firstPortionRegexp := regexp.MustCompile(
-					regexp.QuoteMeta(`[WARNING]`) + ".*" + regexp.QuoteMeta(`github.com/`) + "[^/]+" + regexp.QuoteMeta(`/witchcraft-go-logging/wlog_test.TestOutputFromContextEmptyContext`) + ".+" + regexp.QuoteMeta(`/wlog/context_default_test.go:`) + "[0-9]+" + regexp.QuoteMeta(`]: usage of `+loggerTestCaseInfo.loggerPkg+`.Logger from FromContext that did not have that logger set: `))
+					regexp.QuoteMeta(`[WARNING]`) + ".*" + regexp.QuoteMeta(`github.com/`) + "[^/]+" + regexp.QuoteMeta(`/witchcraft-go-logging/v2/wlog_test.TestOutputFromContextEmptyContext`) + ".+" + regexp.QuoteMeta(`/wlog/context_default_test.go:`) + "[0-9]+" + regexp.QuoteMeta(`]: usage of `+loggerTestCaseInfo.loggerPkg+`.Logger from FromContext that did not have that logger set: `))
 				loc := firstPortionRegexp.FindStringIndex(logOutput)
 				require.NotNil(t, loc, "Unexpected log output: %s", logOutput)
 

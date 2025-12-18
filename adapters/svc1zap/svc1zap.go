@@ -17,9 +17,9 @@ package svc1zap
 import (
 	"strings"
 
-	"github.com/palantir/witchcraft-go-logging/internal/gopath"
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/svclog/svc1log"
+	"github.com/palantir/witchcraft-go-logging/v2/internal/gopath"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/svclog/svc1log"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

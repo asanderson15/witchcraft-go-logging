@@ -22,7 +22,7 @@ import (
 
 	"github.com/palantir/pkg/objmatcher"
 	"github.com/palantir/pkg/safejson"
-	"github.com/palantir/witchcraft-go-logging/wlog/metriclog/metric1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/metriclog/metric1log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -18,10 +18,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/palantir/witchcraft-go-logging/example-apps/producer"
+	"github.com/palantir/witchcraft-go-logging/v2/example-apps/producer"
 
 	// required to hook up the default implementation
-	_ "github.com/palantir/witchcraft-go-logging/wlog-zap"
+	_ "github.com/palantir/witchcraft-go-logging/v2/wlog-zap"
 )
 
 func main() {

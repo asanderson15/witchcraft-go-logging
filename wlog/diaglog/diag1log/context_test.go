@@ -19,7 +19,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/palantir/witchcraft-go-logging/wlog/diaglog/diag1log"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/diaglog/diag1log"
 	"github.com/stretchr/testify/assert"
 )
 

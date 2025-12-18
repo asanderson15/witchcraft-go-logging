@@ -19,8 +19,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/palantir/witchcraft-go-logging/wlog"
-	"github.com/palantir/witchcraft-go-logging/wlog/extractor"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog"
+	"github.com/palantir/witchcraft-go-logging/v2/wlog/extractor"
 )
 
 const (
